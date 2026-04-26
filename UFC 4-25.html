@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UFC Fight Night: Sterling vs. Zalal — Deep Research Paper | April 25, 2026</title>
+<style>
+  :root {
+    --navy: #0E1F3D;
+    --navy-mid: #1a3260;
+    --gold: #C9A84C;
+    --red: #C0392B;
+    --green: #1a7a4a;
+    --amber: #e67e22;
+    --teal: #0e6b6b;
+    --slate: #4a5568;
+    --light-bg: #f7f8fa;
+    --border: #dde1ea;
+    --text: #1a202c;
+    --muted: #6b7280;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Georgia', serif; background: #eef0f5; color: var(--text); font-size: 15px; line-height: 1.7; }
+
+  /* ── HEADER ── */
+  .site-header {
+    background: var(--navy);
+    color: #fff;
+    padding: 0;
+  }
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px 14px;
+    border-bottom: 3px solid var(--gold);
+  }
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .logo-mark {
+    width: 46px; height: 46px;
+    background: var(--gold);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: 900; font-size: 18px; color: var(--navy);
+  }
+  .firm-name { font-family: 'Arial', sans-serif; font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #cdd4e0; }
+  .firm-tagline { font-size: 11px; color: #8899b0; margin-top: 2px; }
+  .doc-badge {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 4px;
+    padding: 6px 16px;
+    font-family: 'Arial', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #c8d4e8;
+    text-align: right;
+  }
+  .doc-badge strong { display: block; font-size: 14px; color: var(--gold); letter-spacing: 1px; }
+
+  .event-banner {
+    background: linear-gradient(135deg, #0d1b35 0%, #1e3a6e 50%, #0d1b35 100%);
+    padding: 30px 40px 24px;
+    border-bottom: 1px solid rgba(201,168,76,0.3);
+  }
+  .event-title { font-family: 'Arial Black', sans-serif; font-size: 28px; color: #fff; text-transform: uppercase; letter-spacing: 1px; }
+  .event-title span { color: var(--gold); }
+  .event-meta { display: flex; gap: 30px; margin-top: 12px; flex-wrap: wrap; }
+  .event-meta-item { font-family: 'Arial', sans-serif; font-size: 12px; color: #8899b0; }
+  .event-meta-item strong { color: #c8d4e8; display: block; font-size: 13px; }
+
+  /* ── CONFIDENTIAL STRIP ── */
+  .conf-strip {
+    background: #8B0000;
+    color: #fff;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 5px;
+  }
+
+  /* ── LAYOUT ── */
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+  .page-body { padding: 30px 0 60px; }
+
+  /* ── TOC ── */
+  .toc-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--navy);
+    border-radius: 6px;
+    padding: 24px 28px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .toc-title { font-family: 'Arial', sans-serif; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--navy); margin-bottom: 14px; }
+  .toc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 30px; }
+  .toc-grid a { color: var(--navy-mid); font-family: 'Arial', sans-serif; font-size: 13px; text-decoration: none; padding: 3px 0; border-bottom: 1px dashed transparent; }
+  .toc-grid a:hover { border-bottom-color: var(--gold); color: var(--gold); }
+  .toc-num { color: var(--gold); font-weight: bold; margin-right: 6px; }
+
+  /* ── SECTION CARDS ── */
+  .section-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin-bottom: 28px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  }
+  .section-head {
+    background: var(--navy);
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .section-num {
+    width: 32px; height: 32px;
+    background: var(--gold);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: 900; font-size: 14px; color: var(--navy);
+    flex-shrink: 0;
+  }
+  .section-head h2 { color: #fff; font-family: 'Arial', sans-serif; font-size: 16px; font-weight: 700; letter-spacing: 0.5px; }
+  .section-body { padding: 24px 28px; }
+
+  /* ── FIGHT CARDS ── */
+  .fight-card {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin-bottom: 24px;
+    overflow: hidden;
+  }
+  .fight-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    background: var(--light-bg);
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .fight-label { font-family: 'Arial', sans-serif; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); }
+  .fight-matchup { font-family: 'Arial Black', sans-serif; font-size: 18px; color: var(--navy); }
+  .fight-matchup .vs { color: var(--muted); font-size: 13px; font-weight: normal; margin: 0 8px; }
+  .fight-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+
+  .fight-body { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .fighter-col { padding: 20px; }
+  .fighter-col:first-child { border-right: 1px solid var(--border); }
+  .fighter-name { font-family: 'Arial', sans-serif; font-weight: 700; font-size: 16px; color: var(--navy); margin-bottom: 4px; }
+  .fighter-record { font-size: 12px; color: var(--muted); font-family: 'Arial', sans-serif; margin-bottom: 10px; }
+  .fighter-stat { display: flex; gap: 8px; font-size: 13px; margin-bottom: 4px; }
+  .stat-label { color: var(--muted); font-family: 'Arial', sans-serif; min-width: 110px; }
+  .stat-val { color: var(--text); font-weight: 600; }
+
+  .fight-analysis { padding: 18px 20px; background: #fafbfd; border-top: 1px solid var(--border); }
+  .analysis-title { font-family: 'Arial', sans-serif; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--navy); margin-bottom: 10px; font-weight: 700; }
+  .analysis-text { font-size: 14px; line-height: 1.7; }
+  .key-factor { background: #eef3ff; border-left: 3px solid #3b5bdb; padding: 10px 14px; margin-top: 12px; border-radius: 0 4px 4px 0; font-size: 13px; }
+  .key-factor strong { color: #3b5bdb; display: block; font-family: 'Arial', sans-serif; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px; }
+
+  .fight-verdict { padding: 14px 20px; background: var(--navy); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+  .verdict-pick { color: #fff; font-family: 'Arial', sans-serif; }
+  .verdict-pick span { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #8899b0; display: block; }
+  .verdict-pick strong { font-size: 17px; color: var(--gold); }
+  .verdict-method { color: #c8d4e8; font-size: 13px; font-family: 'Arial', sans-serif; }
+  .verdict-conf { font-family: 'Arial', sans-serif; font-size: 12px; color: #8899b0; }
+
+  /* ── ODDS TABLE ── */
+  .odds-table { width: 100%; border-collapse: collapse; font-family: 'Arial', sans-serif; font-size: 13px; }
+  .odds-table thead tr { background: var(--navy); color: #fff; }
+  .odds-table th { padding: 11px 14px; text-align: left; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; }
+  .odds-table tbody tr { border-bottom: 1px solid var(--border); }
+  .odds-table tbody tr:nth-child(even) { background: var(--light-bg); }
+  .odds-table td { padding: 10px 14px; vertical-align: middle; }
+  .odds-table td:first-child { font-weight: 600; color: var(--navy); }
+  .num-cell { font-family: 'Courier New', monospace; font-weight: 700; }
+  .pos { color: #1a7a4a; }
+  .neg { color: #c0392b; }
+  .value-flag { background: #FFF3CD; border-radius: 3px; padding: 2px 8px; font-size: 11px; font-weight: 700; color: #856404; }
+  .value-flag.hot { background: #d4edda; color: #155724; }
+  .value-flag.best { background: #cce5ff; color: #004085; }
+
+  /* ── BADGES ── */
+  .badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-family: 'Arial', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .badge-main { background: #1a3260; color: #fff; }
+  .badge-co { background: #2c5f8a; color: #fff; }
+  .badge-prelim { background: #4a5568; color: #fff; }
+  .badge-early { background: #6b7280; color: #fff; }
+  .badge-fav { background: #c0392b; color: #fff; }
+  .badge-dog { background: #1a7a4a; color: #fff; }
+  .badge-pick { background: #856404; color: #fff; }
+  .badge-value { background: #0e6b6b; color: #fff; }
+  .badge-conf-hi { background: #1a7a4a; color: #fff; }
+  .badge-conf-med { background: #e67e22; color: #fff; }
+  .badge-conf-lo { background: #7f8c8d; color: #fff; }
+  .badge-weight { background: #2d3748; color: #fff; }
+
+  /* ── CALLOUTS ── */
+  .callout { border-radius: 4px; padding: 14px 18px; margin: 16px 0; font-size: 14px; }
+  .callout-title { font-family: 'Arial', sans-serif; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 700; margin-bottom: 6px; }
+  .callout-value { background: #d4edda; border-left: 4px solid #1a7a4a; }
+  .callout-value .callout-title { color: #155724; }
+  .callout-warn { background: #fff3cd; border-left: 4px solid #856404; }
+  .callout-warn .callout-title { color: #856404; }
+  .callout-note { background: #cce5ff; border-left: 4px solid #004085; }
+  .callout-note .callout-title { color: #004085; }
+  .callout-risk { background: #f8d7da; border-left: 4px solid #721c24; }
+  .callout-risk .callout-title { color: #721c24; }
+
+  /* ── VALUE BET TILES ── */
+  .value-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .value-tile {
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--teal);
+    border-radius: 6px;
+    padding: 18px;
+    background: #fff;
+  }
+  .value-tile.tier1 { border-top-color: #1a7a4a; }
+  .value-tile.tier2 { border-top-color: #3b5bdb; }
+  .value-tile.tier3 { border-top-color: #e67e22; }
+  .value-tile.tier4 { border-top-color: #7f8c8d; }
+  .value-tier { font-family: 'Arial', sans-serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+  .value-fighter { font-family: 'Arial', sans-serif; font-size: 18px; font-weight: 900; color: var(--navy); }
+  .value-odds-row { display: flex; align-items: center; gap: 14px; margin: 8px 0; flex-wrap: wrap; }
+  .market-odds { font-family: 'Courier New', monospace; font-size: 16px; font-weight: 700; color: #1a7a4a; }
+  .fair-odds { font-family: 'Courier New', monospace; font-size: 14px; color: var(--muted); }
+  .edge-label { font-size: 12px; color: var(--muted); font-family: 'Arial', sans-serif; }
+  .value-rationale { font-size: 13px; margin-top: 8px; color: var(--slate); }
+
+  /* ── METHODOLOGY ── */
+  .method-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+  .method-box { background: var(--light-bg); border: 1px solid var(--border); border-radius: 4px; padding: 14px; }
+  .method-box h4 { font-family: 'Arial', sans-serif; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: var(--navy); margin-bottom: 8px; }
+  .method-box p { font-size: 13px; color: var(--slate); }
+
+  /* ── FOOTER ── */
+  .page-footer {
+    background: var(--navy);
+    color: #8899b0;
+    padding: 20px 40px;
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .footer-disc { max-width: 700px; line-height: 1.5; }
+  .footer-right { color: var(--gold); font-size: 11px; text-align: right; }
+
+  /* ── UTILS ── */
+  ul.bullet-list { list-style: none; padding: 0; }
+  ul.bullet-list li { padding: 5px 0 5px 18px; position: relative; font-size: 14px; }
+  ul.bullet-list li::before { content: '▸'; color: var(--gold); position: absolute; left: 0; }
+  .divider { border: none; border-top: 1px solid var(--border); margin: 20px 0; }
+  .text-muted { color: var(--muted); font-size: 13px; }
+  .mt-16 { margin-top: 16px; }
+  .mb-16 { margin-bottom: 16px; }
+
+  @media print {
+    body { background: #fff; }
+    .site-header, .conf-strip { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+    .section-head { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+    .fight-verdict { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+    .section-card { break-inside: avoid; }
+    .fight-card { break-inside: avoid; }
+  }
+
+  @media (max-width: 720px) {
+    .fight-body { grid-template-columns: 1fr; }
+    .fighter-col:first-child { border-right: none; border-bottom: 1px solid var(--border); }
+    .value-grid { grid-template-columns: 1fr; }
+    .method-grid { grid-template-columns: 1fr; }
+    .toc-grid { grid-template-columns: 1fr; }
+    .header-top { padding: 14px 20px; }
+    .event-banner { padding: 20px; }
+    .section-body { padding: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══ HEADER ═══ -->
+<header class="site-header">
+  <div class="header-top">
+    <div class="header-logo">
+      <div class="logo-mark">AR</div>
+      <div>
+        <div class="firm-name">Analytics Research Group</div>
+        <div class="firm-tagline">Combat Sports Intelligence · Quantitative Odds Analysis</div>
+      </div>
+    </div>
+    <div class="doc-badge">
+      <strong>RESEARCH PAPER</strong>
+      ARG-UFC-2026-0425
+    </div>
+  </div>
+  <div class="event-banner">
+    <div class="event-title">UFC FIGHT NIGHT — <span>STERLING vs. ZALAL</span></div>
+    <div class="event-meta">
+      <div class="event-meta-item"><strong>Date</strong>April 25, 2026</div>
+      <div class="event-meta-item"><strong>Venue</strong>UFC APEX, Las Vegas, NV</div>
+      <div class="event-meta-item"><strong>Main Card</strong>8:00 PM ET · Paramount+</div>
+      <div class="event-meta-item"><strong>Prelims</strong>5:00 PM ET</div>
+      <div class="event-meta-item"><strong>Fights Analyzed</strong>12</div>
+      <div class="event-meta-item"><strong>Prepared</strong>April 25, 2026 · 4:00 PM ET</div>
+    </div>
+  </div>
+</header>
+<div class="conf-strip">Analytical Research Only — Not Financial or Wagering Advice — Pre-Fight Assessment</div>
+
+<!-- ═══ BODY ═══ -->
+<div class="container">
+<div class="page-body">
+
+  <!-- TOC -->
+  <div class="toc-card">
+    <div class="toc-title">Table of Contents</div>
+    <div class="toc-grid">
+      <a href="#methodology"><span class="toc-num">I.</span>Methodology &amp; Framework</a>
+      <a href="#main-card"><span class="toc-num">II.</span>Main Card — Fight-by-Fight Analysis</a>
+      <a href="#prelims"><span class="toc-num">III.</span>Preliminary Card — Fight-by-Fight Analysis</a>
+      <a href="#odds-table"><span class="toc-num">IV.</span>Master Odds &amp; Probability Table</a>
+      <a href="#value-bets"><span class="toc-num">V.</span>Value Bet Identification &amp; Asymmetries</a>
+      <a href="#takeaways"><span class="toc-num">VI.</span>Key Takeaways &amp; Summary</a>
+    </div>
+  </div>
+
+  <!-- ══ I. METHODOLOGY ══ -->
+  <div class="section-card" id="methodology">
+    <div class="section-head">
+      <div class="section-num">I</div>
+      <h2>Methodology &amp; Research Framework</h2>
+    </div>
+    <div class="section-body">
+      <p>This paper analyzes all 12 scheduled bouts for UFC Fight Night: Sterling vs. Zalal using a structured quantitative framework. Fighter profiles, recent form, stylistic matchup analysis, and current market odds were synthesized to produce an independent probability assessment for each fight. Where my implied probabilities diverge meaningfully from market odds, potential value asymmetries are flagged.</p>
+
+      <div class="method-grid mt-16">
+        <div class="method-box">
+          <h4>Fighter Research</h4>
+          <p>Recent records (last 5 fights), fight style, grappling vs. striking tendencies, win streak/skid, and notable recent opponents for all 24 fighters.</p>
+        </div>
+        <div class="method-box">
+          <h4>Odds Sourcing</h4>
+          <p>Market odds captured as of approximately 4:00 PM ET on April 25, 2026, representing consensus across major sportsbooks. Used as the baseline for comparison.</p>
+        </div>
+        <div class="method-box">
+          <h4>Probability Model</h4>
+          <p>Independent probability estimates derived from matchup analysis. Converted to American odds format: Favorite = −(p/(1−p))×100; Underdog = ((1−p)/p)×100.</p>
+        </div>
+      </div>
+
+      <div class="callout callout-note mt-16">
+        <div class="callout-title">Note on Already-Completed Fights</div>
+        Per the research parameters, all fights on this card are analyzed as pre-fight assessments. Market odds from 4:00 PM ET are used throughout. No outcome knowledge is applied to any fight — this represents a clean pre-event snapshot.
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ II. MAIN CARD ══ -->
+  <div class="section-card" id="main-card">
+    <div class="section-head">
+      <div class="section-num">II</div>
+      <h2>Main Card — Fight-by-Fight Analysis</h2>
+    </div>
+    <div class="section-body">
+
+      <!-- FIGHT 1: Sterling vs Zalal -->
+      <div class="fight-card">
+        <div class="fight-header">
+          <div>
+            <div class="fight-label">Main Event · Featherweight · 5 Rounds</div>
+            <div class="fight-matchup">Aljamain Sterling <span class="vs">vs.</span> Youssef Zalal</div>
+          </div>
+          <div class="fight-tags">
+            <span class="badge badge-main">Main Event</span>
+            <span class="badge badge-weight">Featherweight</span>
+          </div>
+        </div>
+        <div class="fight-body">
+          <div class="fighter-col">
+            <div class="fighter-name">Aljamain Sterling</div>
+            <div class="fighter-record">25–5 · #5 Featherweight</div>
+            <div class="fighter-stat"><span class="stat-label">Background:</span><span class="stat-val">Elite Wrestler / BJJ</span></div>
+            <div class="fighter-stat"><span class="stat-label">Previous Div:</span><span class="stat-val">Former UFC Bantamweight Champion</span></div>
+            <div class="fighter-stat"><span class="stat-label">Recent Form:</span><span class="stat-val">Mixed — 1-2 in last 3</span></div>
+            <div class="fighter-stat"><span class="stat-label">Notable Wins:</span><span class="stat-val">Dillashaw, Yan (×2), O'Malley (loss)</span></div>
+            <div class="fighter-stat"><span class="stat-label">Key Attribute:</span><span class="stat-val">Cage control, takedowns, neck crank</span></div>
+            <div class="fighter-stat"><span class="stat-label">Market Odds:</span><span class="stat-val num-cell pos">+114 to +120</span></div>
+          </div>
+          <div class="fighter-col">
+            <div class="fighter-name">Youssef Zalal</div>
+            <div class="fighter-record">18–5–1 · #7 Featherweight</div>
+            <div class="fighter-stat"><span class="stat-label">Background:</span><span class="stat-val">BJJ Black Belt / Striker</span></div>
+            <div class="fighter-stat"><span class="stat-label">Win Streak:</span><span class="stat-val">5 consecutive wins</span></div>
+            <div class="fighter-stat"><span class="stat-label">Recent Form:</span><span class="stat-val">Submitted Josh Emmett in 1:38 (R1)</span></div>
+            <div class="fighter-stat"><span class="stat-label">Notable Wins:</span><span class="stat-val">Emmett, Herbert, Hernandez</span></div>
+            <div class="fighter-stat"><span class="stat-label">Key Attribute:</span><span class="stat-val">High-level BJJ, submission offense</span></div>
+            <div class="fighter-stat"><span class="stat-label">Market Odds:</span><span class="stat-val num-cell neg">−135 to −145</span></div>
+          </div>
+        </div>
+        <div class="fight-analysis">
+          <div class="analysis-title">Matchup Analysis</div>
+          <div class="analysis-text">
+            Sterling brings an elite wrestling pedigree from his bantamweight championship run — he's technically sound in the clinch, excellent at controlling the cage, and dangerous with his guillotine and neck cranks. Moving up to 145 lbs should give him more physical presence than at BW. However, his recent form has been inconsistent, and he enters this fight on a loss to Sean O'Malley.
+            <br><br>
+            Zalal has been on a tear. His submission of Josh Emmett — a former title challenger — in under two minutes at featherweight is significant. His BJJ at the elite level is genuinely dangerous, and he has the grappling credentials to match Sterling on the mat. The question is whether Sterling's more refined wrestling (takedowns, top control) beats Zalal's submission-oriented BJJ.
+          </div>
+          <div class="key-factor">
+            <strong>Key Factor</strong>
+            The wrestling-vs-BJJ dynamic. Sterling's top control and takedowns vs. Zalal's submission game from bottom. If Sterling can control position without getting submitted, he likely wins on volume. If Zalal can scramble to dominant positions or land a submission from the guard, he wins. Sterling's 5-round cardio edge could matter late.
+          </div>
+        </div>
+        <div class="fight-verdict">
+          <div class="verdict-pick">
+            <span>My Pick</span>
+            <strong>Aljamain Sterling</strong>
+          </div>
+          <div class="verdict-method">Decision (Wrestling/Volume) · 5 Rounds</div>
+          <div class="verdict-conf"><span class="badge badge-conf-med">52% Confidence</span></div>
+        </div>
+      </div>
+
+      <!-- FIGHT 2: Dumont vs Edwards -->
+      <div class="fight-card">
+        <div class="fight-header">
+          <div>
+            <div class="fight-label">Co-Main Event · Women's Bantamweight</div>
+            <div class="fight-matchup">Norma Dumont <span class="vs">vs.</span> Joselyne Edwards</div>
+          </div>
+          <div class="fight-tags">
+            <span class="badge badge-co">Co-Main</span>
+            <span class="badge badge-weight">W-Bantamweight</span>
+          </div>
+        </div>
+        <div class="fight-body">
+          <div class="fighter-col">
+            <div class="fighter-name">Norma Dumont</div>
+            <div class="fighter-record">13–2 · #3 Women's Bantamweight</div>
+            <div class="fighter-stat"><span class="stat-label">Win Streak:</span><span class="stat-val">6 consecutive wins</span></div>
+            <div class="fighter-stat"><span class="stat-label">Style:</span><span class="stat-val">Technical striker, Muay Thai base</span></div>
+            <div class="fighter-stat"><span class="stat-label">Recent Wins:</span><span class="stat-val">Karol Rosa, Julija Stoliarenko</span></div>
+            <div class="fighter-stat"><span class="stat-label">Key Attribute:</span><span class="stat-val">Precision striking, durability</span></div>
+            <div class="fighter-stat"><span class="stat-label">Market Odds:</span><span class="stat-val num-cell neg">−245</span></div>
+          </div>
+          <div class="fighter-col">
+            <div class="fighter-name">Joselyne Edwards</div>
+            <div class="fighter-record">17–6 · #11 Women's Bantamweight</div>
+            <div class="fighter-stat"><span class="stat-label">Recent Form:</span><span class="stat-val">4 straight finishes</span></div>
+            <div class="fighter-stat"><span class="stat-label">Notice:</span><span class="stat-val">Short-notice replacement</span></div>
+            <div class="fighter-stat"><span class="stat-label">Style:</span><span class="stat-val">Aggressive finisher, powerful striker</span></div>
+            <div class="fighter-stat"><span class="stat-label">Key Attribute:</span><span class="stat-val">Knockout power, aggressive pace</span></div>
+            <div class="fighter-stat"><span class="stat-label">Market Odds:</span><span class="stat-val num-cell pos">+200</span></div>
+          </div>
+        </div>
+        <div class="fight-analysis">
+          <div class="analysis-title">Matchup Analysis</div>
+          <div class="analysis-text">
+            Dumont is a legitimate #3-ranked contender on a 6-fight run — she's technically polished, durable, and has beaten quality competition at bantamweight. At −245, the market reflects significant confidence in her as a strong favorite.
+            <br><br>
+            Edwards, however, is not a pushover. She's coming in on 4 consecutive finishes, has genuine knockout power, and carries the kind of aggression that can upset gameplans. Short-notice is a double-edged sword — she has less time to prepare specifically for Dumont, but also less time to overthink or get in her head. Edwards has historically performed well in short-notice spots and her finishing ability is real.
+          </div>
+          <div class="key-factor">
+            <strong>Key Factor</strong>
+            Edwards' finishing power vs. Dumont's technical precision. If Dumont boxes at distance and doesn't let Edwards set her feet, the favorite should win clearly. But Edwards only needs one exchange to go right — and her power at BW is notable. The short-notice factor is a genuine wildcard.
+          </div>
+        </div>
+        <div class="fight-verdict">
+          <div class="verdict-pick">
+            <span>My Pick</span>
+            <strong>Norma Dumont</strong>
+          </div>
+          <div class="verdict-method">Decision · Technical Striking</div>
+          <div class="verdict-conf"><span class="badge badge-conf-med">62% Confidence</span></div>
+        </div>
+      </div>
+
+      <!-- FIGHT 3: Garcia vs Hernandez -->
+      <div class="fight-card">
+        <div class="fight-header">
+          <div>
+            <div class="fight-label">Main Card · Lightweight</div>
+            <div class="fight-matchup">Diego Garcia <span class="vs">vs.</span> Omar Hernandez</div>
+          </div>
+          <div class="fight-tags">
+            <span class="badge badge-main">Main Card</span>
+            <span class="badge badge-weight">Lightweight</span>
+          </div>
+        </div>
+        <div class="fight-body">
+          <div class="fighter-col">
+            <div class="fighter-name">Diego Garcia</div>
+            <div class="fighter-record">18–4 · Lightweight</div>
+            <div class="fighter-stat"><span class="stat-label">Style:</span><span class="stat-val">Grappler, submission threat</span></div>
+            <div class="fighter-stat"><span class="stat-label">Recent Form:</span><span class="stat-val">Mixed results in UFC</span></div>
+            <div class="fighter-stat"><span class="stat-label">Market Odds:</span><span class="stat-val num-cell pos">+105 to +110</span></div>
+          </div>
+          <div class="fighter-col">
+            <div class="fighter-name">Omar Hernandez</div>
+            <div class="fighter-record">18–8 · Lightweight</div>
+            <div class="fighter-stat"><span class="stat-label">Win Streak:</span><span class="stat-val">4 consecutive wins</span></div>
+            <div class="fighter-stat"><span class="stat-label">Style:</span><span class="stat-val">Striker, volume puncher</span></div>
+            <div class="fighter-stat"><span class="stat-label">Recent Form:</span><span class="stat-val">Building momentum at LW</span></div>
+            <div class="fighter-stat"><span class="stat-label">Market Odds:</span><span class="stat-val num-cell neg">−125 to −130</span></div>
+          </div>
+        </div>
+        <div class="fight-analysis">
+          <div class="analysis-title">Matchup Analysis</div>
+          <div class="analysis-text">
+            Hernandez enters on a 4-fight winning streak and has been improving with each performance. His volume striking and pace can be difficult for grapplers to manage if they can't execute takedowns cleanly. Garcia's grappling could offset Hernandez's striking advantage if he can get the fight to the ground consistently, but Hernandez's takedown defense has improved.
+          </div>
+          <div class="key-factor">
+            <strong>Key Factor</strong>
+            Garcia's takedown success rate. If he can impose his grappling, the fight changes dramatically. If it stays standing, Hernandez's volume and 4-fight momentum are the differentiating factors.
+          </div>
+        </div>
+        <div class="fight-verdict">
+          <div class="verdict-pick">
+            <span>My Pick</span>
+            <strong>Omar Hernandez</strong>
+          </div>
+          <div class="verdict-method">Decision · Volume Striking</div>
+          <div class="verdict-conf"><span class="badge badge-conf-lo">54% Confidence</span></div>
+        </div>
+      </div>
+
+      <!-- FIGHT 4: Grant vs Martinetti -->
+      <div class="fight-card">
+        <div class="fight-header">
+          <div>
+            <div class="fight-label">Main Card · Bantamweight</div>
+            <div class="fight-matchup">Davey Grant <span class="vs">vs.</span> Manuel Martinetti</div>
+          </div>
+          <div class="fight-tags">
+            <span class="badge badge-main">Main Card</span>
+            <span class="badge badge-weight">Bantamweight</span>
+          </div>
+        </div>
+        <div class="fight-body">
+          <div class="fighter-col">
+            <div class="fighter-name">Davey Grant</div>
+            <div class="fighter-record">17–8 · Bantamweight</div>
+            <div class="fighter-stat"><span class="stat-label">UFC Record:</span><span class="stat-val">8–7 in UFC, veteran presence</span></div>
+            <div class="fighter-stat"><span class="stat-label">Style:</span><span class="stat-val">Well-rounded, experienced</span></div>
+            <div class="fighter-stat"><span class="stat-label">Market Odds:</span><span class="stat-val num-cell pos">+110 to +130</span></div>
+          </div>
+          <div class="fighter-col">
+            <div class="fighter-name">Manuel Martinetti</div>
+            <div class="fighter-record">17–1 · UFC Debut</div>
+            <div class="fighter-stat"><span class="stat-label">Background:</span><span class="stat-val">Dana White's Contender Series winner</span></div>
+            <div class="fighter-stat"><span class="stat-label">Style:</span><span class="stat-val">Finisher, aggressive</span></div>
+            <div class="fighter-stat"><span class="stat-label">Key Risk:</span><span class="stat-val">UFC debut, unknown octagon IQ</span></div>
+            <div class="fighter-stat"><span class="stat-label">Market Odds:</span><span class="stat-val num-cell neg">−130 to −155</span></div>
+          </div>
+        </div>
+        <div class="fight-analysis">
+          <div class="analysis-title">Matchup Analysis</div>
+          <div class="analysis-text">
+            Martinetti has a sparkling 17-1 record but this is his UFC debut — a significant step up. Grant is a long-tenured UFC veteran who knows how to neutralize debutants. Martinetti's finishing ability is real (Contender Series performances are high-quality), but octagon jitters and the step up in competition quality are genuine factors. Grant's experience in close fights is underrated.
+          </div>
+          <div class="key-factor">
+            <strong>Key Factor</strong>
+            UFC debut pressure vs. veteran experience. Martinetti's superior record and finishing ability vs. Grant's ability to impose octagon-pace and manage a debutant's energy.
+          </div>
+        </div>
+        <div class="fight-verdict">
+          <div class="verdict-pick">
+            <span>My Pick</span>
+            <strong>Manuel Martinetti</strong>
+          </div>
+          <div class="verdict-method">Finish or Decision · Slight Edge</div>
+          <div class="verdict-conf"><span class="badge badge-conf-lo">55% Confidence</span></div>
+        </div>
+      </div>
+
+      <!-- FIGHT 5: Jackson vs Barcelos -->
+      <div class="fight-card">
+        <div class="fight-header">
+          <div>
+            <div class="fight-label">Main Card · Bantamweight</div>
+            <div class="fight-matchup">Trevin Jones <span class="vs">vs.</span> Raoni Barcelos</div>
+          </div>
+          <div class="fight-tags">
+            <span class="badge badge-main">Main Card</span>
+            <span class="badge badge-weight">Bantamweight</span>
+          </div>
+        </div>
+        <div class="fight-body">
+          <div class="fighter-col">
+            <div class="fighter-name">Trevin Jones</div>
+            <div class="fighter-record">15–3 · Bantamweight</div>
+            <div class="fighter-stat"><span class="stat-label">Style:</span><span class="stat-val">Aggressive striker, knockout power</span></div>
+            <div class="fighter-stat"><span class="stat-label">Recent Form:</span><span class="stat-val">Strong UFC run</span></div>
+            <div class="fighter-stat"><span class="stat-label">Market Odds:</span><span class="stat-val num-cell neg">−185 to −190</span></div>
+          </div>
+          <div class="fighter-col">
+            <div class="fighter-name">Raoni Barcelos</div>
+            <div class="fighter-record">21–5 · Bantamweight</div>
+            <div class="fighter-stat"><span class="stat-label">Win Streak:</span><span class="stat-val">4 consecutive wins</span></div>
+            <div class="fighter-stat"><span class="stat-label">Style:</span><span class="stat-val">Technical striker, boxing base</span></div>
+            <div class="fighter-stat"><span class="stat-label">Recent Form:</span><span class="stat-val">4-fight run, improving form</span></div>
+            <div class="fighter-stat"><span class="stat-label">Market Odds:</span><span class="stat-val num-cell pos">+154 to +165</span></div>
+          </div>
+        </div>
+        <div class="fight-analysis">
+          <div class="analysis-title">Matchup Analysis</div>
+          <div class="analysis-text">
+            Jones is a dangerous striker with genuine knockout power, installed as a significant favorite. Barcelos has quietly built a 4-fight winning streak and his technical boxing and footwork have improved considerably. He's capable of outboxing heavy-handed strikers. Jones' power is real but Barcelos' ability to use angles and jab-based distance management could neutralize the heavier puncher.
+          </div>
+          <div class="key-factor">
+            <strong>Key Factor</strong>
+            Barcelos' footwork and range management. If he can stay out of the power lane and use his jab to control pace, he can win. If Jones cuts off the cage and lands clean, the power advantage decides it.
+          </div>
+        </div>
+        <div class="fight-verdict">
+          <div class="verdict-pick">
+            <span>My Pick</span>
+            <strong>Trevin Jones</strong>
+          </div>
+          <div class="verdict-method">KO/TKO · Power Advantage</div>
+          <div class="verdict-conf"><span class="badge badge-conf-med">62% Confidence</span></div>
+        </div>
+      </div>
+
+      <!-- FIGHT 6: Buchecha vs Spann -->
+      <div class="fight-card">
+        <div class="fight-header">
+          <div>
+            <div class="fight-label">Main Card · Heavyweight</div>
+            <div class="fight-matchup">Alexandre Buchecha <span class="vs">vs.</span> Ryan Spann</div>
+          </div>
+          <div class="fight-tags">
+            <span class="badge badge-main">Main Card</span>
+            <span class="badge badge-weight">Heavyweight</span>
+          </div>
+        </div>
+        <div class="fight-body">
+          <div class="fighter-col">
+            <div class="fighter-name">Alexandre Buchecha</div>
+            <div class="fighter-record">5–2–1 · Heavyweight</div>
+            <div class="fighter-stat"><span class="stat-label">Background:</span><span class="stat-val">13× World BJJ Champion (IBJJF)</span></div>
+            <div class="fighter-stat"><span class="stat-label">Style:</span><span class="stat-val">Elite grappler, submission specialist</span></div>
+            <div class="fighter-stat"><span class="stat-label">Key Risk:</span><span class="stat-val">Striking development still limited</span></div>
+            <div class="fighter-stat"><span class="stat-label">Market Odds:</span><span class="stat-val num-cell neg">−135</span></div>
+          </div>
+          <div class="fighter-col">
+            <div class="fighter-name">Ryan Spann</div>
+            <div class="fighter-record">23–11 · Light Heavyweight / Heavyweight</div>
+            <div class="fighter-stat"><span class="stat-label">Notice:</span><span class="stat-val">2 weeks' notice</span></div>
+            <div class="fighter-stat"><span class="stat-label">Style:</span><span class="stat-val">Athletic striker, KO power</span></div>
+            <div class="fighter-stat"><span class="stat-label">Key Risk:</span><span class="stat-val">Short camp, limited HW fights</span></div>
+            <div class="fighter-stat"><span class="stat-label">Market Odds:</span><span class="stat-val num-cell pos">+114</span></div>
+          </div>
+        </div>
+        <div class="fight-analysis">
+          <div class="analysis-title">Matchup Analysis</div>
+          <div class="analysis-text">
+            Buchecha is one of the most decorated BJJ practitioners in history and has been developing his MMA game at heavyweight. His grappling in an MMA context is elite — when he gets the fight to the mat, he is extremely dangerous. Spann on 2 weeks' notice is a real disadvantage for preparation, but Spann is an experienced UFC fighter with real striking power, and if he can keep it standing, he has a path to victory.
+          </div>
+          <div class="key-factor">
+            <strong>Key Factor</strong>
+            Buchecha's grappling vs. Spann's striking in a relatively short HW fight. Buchecha's submissions are world-class; if he gets a takedown he's likely to find a finish. Spann's athleticism and power give him the standing advantage.
+          </div>
+        </div>
+        <div class="fight-verdict">
+          <div class="verdict-pick">
+            <span>My Pick</span>
+            <strong>Alexandre Buchecha</strong>
+          </div>
+          <div class="verdict-method">Submission · 2nd or 3rd Round</div>
+          <div class="verdict-conf"><span class="badge badge-conf-med">58% Confidence</span></div>
+        </div>
+      </div>
+
+    </div><!-- end section-body -->
+  </div><!-- end main card section -->
+
+  <!-- ══ III. PRELIMS ══ -->
+  <div class="section-card" id="prelims">
+    <div class="section-head">
+      <div class="section-num">III</div>
+      <h2>Preliminary Card — Fight-by-Fight Analysis</h2>
+    </div>
+    <div class="section-body">
+
+      <!-- FIGHT 7: Vieira vs McConico -->
+      <div class="fight-card">
+        <div class="fight-header">
+          <div>
+            <div class="fight-label">Preliminary Card · Middleweight</div>
+            <div class="fight-matchup">Rodolfo Vieira <span class="vs">vs.</span> Dustin McConico</div>
+          </div>
+          <div class="fight-tags">
+            <span class="badge badge-prelim">Prelim</span>
+            <span class="badge badge-weight">Middleweight</span>
+          </div>
+        </div>
+        <div class="fight-body">
+          <div class="fighter-col">
+            <div class="fighter-name">Rodolfo Vieira</div>
+            <div class="fighter-record">11–4 · Middleweight</div>
+            <div class="fighter-stat"><span class="stat-label">Background:</span><span class="stat-val">Elite BJJ, ADCC medalist</span></div>
+            <div class="fighter-stat"><span class="stat-label">Style:</span><span class="stat-val">Grappler, submission specialist</span></div>
+            <div class="fighter-stat"><span class="stat-label">Market Odds:</span><span class="stat-val num-cell neg">−290 to −300</span></div>
+          </div>
+          <div class="fighter-col">
+            <div class="fighter-name">Dustin McConico</div>
+            <div class="fighter-record">10–4–1 · Middleweight</div>
+            <div class="fighter-stat"><span class="stat-label">UFC Record:</span><span class="stat-val">1–2 in UFC</span></div>
+            <div class="fighter-stat"><span class="stat-label">Style:</span><span class="stat-val">Striker</span></div>
+            <div class="fighter-stat"><span class="stat-label">Market Odds:</span><span class="stat-val num-cell pos">+235 to +240</span></div>
+          </div>
+        </div>
+        <div class="fight-analysis">
+          <div class="analysis-title">Matchup Analysis</div>
+          <div class="analysis-text">Vieira is a legitimate elite grappler and heavy favorite. McConico's 1-2 UFC record and limited threat level make this a significant mismatch on paper. The market is pricing this correctly as a near lock for Vieira via submission. If McConico can keep it standing and avoid the clinch, he has marginal path to victory, but Vieira's grappling transitions are too high-level.</div>
+        </div>
+        <div class="fight-verdict">
+          <div class="verdict-pick"><span>My Pick</span><strong>Rodolfo Vieira</strong></div>
+          <div class="verdict-method">Submission</div>
+          <div class="verdict-conf"><span class="badge badge-conf-hi">74% Confidence</span></div>
+        </div>
+      </div>
+
+      <!-- FIGHT 8: Dumas vs McVey -->
+      <div class="fight-card">
+        <div class="fight-header">
+          <div>
+            <div class="fight-label">Preliminary Card · Middleweight</div>
+            <div class="fight-matchup">Sedriques Dumas <span class="vs">vs.</span> Jackson McVey</div>
+          </div>
+          <div class="fight-tags">
+            <span class="badge badge-prelim">Prelim</span>
+            <span class="badge badge-weight">Middleweight</span>
+          </div>
+        </div>
+        <div class="fight-body">
+          <div class="fighter-col">
+            <div class="fighter-name">Sedriques Dumas</div>
+            <div class="fighter-record">10–4 · Middleweight</div>
+            <div class="fighter-stat"><span class="stat-label">UFC Record:</span><span class="stat-val">0–2 recent UFC fights</span></div>
+            <div class="fighter-stat"><span class="stat-label">Style:</span><span class="stat-val">Athletic striker</span></div>
+            <div class="fighter-stat"><span class="stat-label">Market Odds:</span><span class="stat-val num-cell pos">+145 to +165</span></div>
+          </div>
+          <div class="fighter-col">
+            <div class="fighter-name">Jackson McVey</div>
+            <div class="fighter-record">6–2 · Middleweight</div>
+            <div class="fighter-stat"><span class="stat-label">UFC Record:</span><span class="stat-val">0–2 in UFC</span></div>
+            <div class="fighter-stat"><span class="stat-label">Style:</span><span class="stat-val">Finisher, aggressive striker</span></div>
+            <div class="fighter-stat"><span class="stat-label">Market Odds:</span><span class="stat-val num-cell neg">−175 to −200</span></div>
+          </div>
+        </div>
+        <div class="fight-analysis">
+          <div class="analysis-title">Matchup Analysis</div>
+          <div class="analysis-text">Both fighters are 0-2 in the UFC — this is a development fight where the winner stays on the roster. McVey's finishing ability and aggression make him a reasonable favorite, but Dumas has the athletic tools to hang. Neither fighter has established UFC-level credentials, making this highly unpredictable. The market slightly favors McVey, which seems reasonable given his finishing instinct.</div>
+        </div>
+        <div class="fight-verdict">
+          <div class="verdict-pick"><span>My Pick</span><strong>Jackson McVey</strong></div>
+          <div class="verdict-method">KO/TKO or Submission</div>
+          <div class="verdict-conf"><span class="badge badge-conf-lo">58% Confidence</span></div>
+        </div>
+      </div>
+
+      <!-- FIGHT 9: Silva vs Montague -->
+      <div class="fight-card">
+        <div class="fight-header">
+          <div>
+            <div class="fight-label">Preliminary Card · Women's Bantamweight</div>
+            <div class="fight-matchup">Mayra Bueno Silva <span class="vs">vs.</span> Michelle Montague</div>
+          </div>
+          <div class="fight-tags">
+            <span class="badge badge-prelim">Prelim</span>
+            <span class="badge badge-weight">W-Bantamweight</span>
+          </div>
+        </div>
+        <div class="fight-body">
+          <div class="fighter-col">
+            <div class="fighter-name">Mayra Bueno Silva</div>
+            <div class="fighter-record">10–6–1 · W-Bantamweight</div>
+            <div class="fighter-stat"><span class="stat-label">Recent Form:</span><span class="stat-val">4-fight losing streak</span></div>
+            <div class="fighter-stat"><span class="stat-label">Background:</span><span class="stat-val">Former elite contender, BJJ base</span></div>
+            <div class="fighter-stat"><span class="stat-label">Key Factor:</span><span class="stat-val">Losing streak vs. elite opponents</span></div>
+            <div class="fighter-stat"><span class="stat-label">Market Odds:</span><span class="stat-val num-cell pos">+340</span></div>
+          </div>
+          <div class="fighter-col">
+            <div class="fighter-name">Michelle Montague</div>
+            <div class="fighter-record">7–0 · W-Bantamweight</div>
+            <div class="fighter-stat"><span class="stat-label">UFC Experience:</span><span class="stat-val">2nd UFC fight</span></div>
+            <div class="fighter-stat"><span class="stat-label">Style:</span><span class="stat-val">Undefeated prospect</span></div>
+            <div class="fighter-stat"><span class="stat-label">Key Factor:</span><span class="stat-val">Unproven at UFC level</span></div>
+            <div class="fighter-stat"><span class="stat-label">Market Odds:</span><span class="stat-val num-cell neg">−395 to −450</span></div>
+          </div>
+        </div>
+        <div class="fight-analysis">
+          <div class="analysis-title">Matchup Analysis</div>
+          <div class="analysis-text">
+            This is the most interesting line on the card. Silva is on a 4-fight losing streak — but context matters. Her losses have come against elite-level opponents (Erin Blanchfield, Norma Dumont, top contenders), not journeymen. She's a legitimate former contender with high-level BJJ. Montague is 7-0 but this is only her 2nd UFC appearance — her competition quality before the UFC is questionable.
+            <br><br>
+            The market is pricing Montague as a massive favorite at −395 to −450, implying ~80% win probability. That seems steep for a fighter on her 2nd UFC fight against a former top contender. Silva's losses have been to great fighters, not indicative of decline.
+          </div>
+          <div class="key-factor">
+            <strong>Key Factor</strong>
+            Silva's BJJ credentials vs. Montague's unproven ceiling. If Silva's game is still there and Montague hasn't faced this level of grappling threat, Silva is significantly undervalued at +340. This is a former elite fighter vs. an unproven prospect — the market may be overcorrecting for Silva's losing streak.
+          </div>
+        </div>
+        <div class="fight-verdict">
+          <div class="verdict-pick"><span>My Pick</span><strong>Michelle Montague</strong></div>
+          <div class="verdict-method">Decision or Finish · Slight Edge</div>
+          <div class="verdict-conf"><span class="badge badge-conf-lo">65% Confidence — BUT Silva is major value</span></div>
+        </div>
+      </div>
+
+      <!-- FIGHT 10: Filho vs Durden -->
+      <div class="fight-card">
+        <div class="fight-header">
+          <div>
+            <div class="fight-label">Preliminary Card · Flyweight</div>
+            <div class="fight-matchup">Iasmin Lucindo <span class="vs">vs.</span> Rayanne dos Santos</div>
+          </div>
+          <div class="fight-tags">
+            <span class="badge badge-prelim">Prelim</span>
+            <span class="badge badge-weight">Flyweight</span>
+          </div>
+        </div>
+        <div class="fight-body">
+          <div class="fighter-col">
+            <div class="fighter-name">Jose Joao Filho</div>
+            <div class="fighter-record">17–4 · Flyweight</div>
+            <div class="fighter-stat"><span class="stat-label">Style:</span><span class="stat-val">Submission specialist, BJJ focus</span></div>
+            <div class="fighter-stat"><span class="stat-label">Key Attribute:</span><span class="stat-val">Elite ground game, finishing rate</span></div>
+            <div class="fighter-stat"><span class="stat-label">Market Odds:</span><span class="stat-val num-cell neg">−600</span></div>
+          </div>
+          <div class="fighter-col">
+            <div class="fighter-name">Joshua Durden</div>
+            <div class="fighter-record">17–10–1 · Flyweight</div>
+            <div class="fighter-stat"><span class="stat-label">Recent Form:</span><span class="stat-val">4-fight losing skid</span></div>
+            <div class="fighter-stat"><span class="stat-label">Notice:</span><span class="stat-val">1 week's notice</span></div>
+            <div class="fighter-stat"><span class="stat-label">Market Odds:</span><span class="stat-val num-cell pos">+440</span></div>
+          </div>
+        </div>
+        <div class="fight-analysis">
+          <div class="analysis-title">Matchup Analysis</div>
+          <div class="analysis-text">Filho is an overwhelming favorite — −600 reflects ~85%+ implied probability. Durden on 1 week's notice with a 4-fight losing skid has almost no path to victory. The market is correct here. Filho's submission threat alone makes this a lopsided affair. This is a maintenance fight for Filho — he should win comfortably.</div>
+        </div>
+        <div class="fight-verdict">
+          <div class="verdict-pick"><span>My Pick</span><strong>Jose Joao Filho</strong></div>
+          <div class="verdict-method">Submission · Early Rounds</div>
+          <div class="verdict-conf"><span class="badge badge-conf-hi">84% Confidence</span></div>
+        </div>
+      </div>
+
+      <!-- FIGHT 11: Marshall vs Brennan -->
+      <div class="fight-card">
+        <div class="fight-header">
+          <div>
+            <div class="fight-label">Preliminary Card · Featherweight</div>
+            <div class="fight-matchup">Francis Marshall <span class="vs">vs.</span> Lucas Brennan</div>
+          </div>
+          <div class="fight-tags">
+            <span class="badge badge-prelim">Prelim</span>
+            <span class="badge badge-weight">Featherweight</span>
+          </div>
+        </div>
+        <div class="fight-body">
+          <div class="fighter-col">
+            <div class="fighter-name">Francis Marshall</div>
+            <div class="fighter-record">9–3 · Featherweight</div>
+            <div class="fighter-stat"><span class="stat-label">Style:</span><span class="stat-val">Well-rounded, UFC veteran</span></div>
+            <div class="fighter-stat"><span class="stat-label">Recent Form:</span><span class="stat-val">Established UFC fighter</span></div>
+            <div class="fighter-stat"><span class="stat-label">Market Odds:</span><span class="stat-val num-cell neg">−535 to −600</span></div>
+          </div>
+          <div class="fighter-col">
+            <div class="fighter-name">Lucas Brennan</div>
+            <div class="fighter-record">11–2 · Featherweight</div>
+            <div class="fighter-stat"><span class="stat-label">UFC Experience:</span><span class="stat-val">UFC debut · 5 days' notice</span></div>
+            <div class="fighter-stat"><span class="stat-label">Notice:</span><span class="stat-val">5 days — extreme short notice</span></div>
+            <div class="fighter-stat"><span class="stat-label">Market Odds:</span><span class="stat-val num-cell pos">+400 to +425</span></div>
+          </div>
+        </div>
+        <div class="fight-analysis">
+          <div class="analysis-title">Matchup Analysis</div>
+          <div class="analysis-text">Brennan on 5 days' notice for his UFC debut against an established UFC fighter is an extreme disadvantage. 5 days is not enough to prepare a fight camp for the UFC level. Marshall should dominate here — the market's −535 to −600 line implies 83-86% probability, which aligns with my assessment. Almost no path for Brennan given the notice and experience gap.</div>
+        </div>
+        <div class="fight-verdict">
+          <div class="verdict-pick"><span>My Pick</span><strong>Francis Marshall</strong></div>
+          <div class="verdict-method">Decision or Finish</div>
+          <div class="verdict-conf"><span class="badge badge-conf-hi">83% Confidence</span></div>
+        </div>
+      </div>
+
+      <!-- FIGHT 12: Griffin vs Valenzuela -->
+      <div class="fight-card">
+        <div class="fight-header">
+          <div>
+            <div class="fight-label">Preliminary Card · Welterweight</div>
+            <div class="fight-matchup">Max Griffin <span class="vs">vs.</span> Victor Valenzuela</div>
+          </div>
+          <div class="fight-tags">
+            <span class="badge badge-prelim">Prelim</span>
+            <span class="badge badge-weight">Welterweight</span>
+          </div>
+        </div>
+        <div class="fight-body">
+          <div class="fighter-col">
+            <div class="fighter-name">Max Griffin</div>
+            <div class="fighter-record">Welterweight Veteran · 40 years old</div>
+            <div class="fighter-stat"><span class="stat-label">Recent Form:</span><span class="stat-val">2 consecutive losses</span></div>
+            <div class="fighter-stat"><span class="stat-label">Style:</span><span class="stat-val">Experienced, durable veteran</span></div>
+            <div class="fighter-stat"><span class="stat-label">Key Factor:</span><span class="stat-val">Age, recent losses vs. experience depth</span></div>
+            <div class="fighter-stat"><span class="stat-label">Market Odds:</span><span class="stat-val num-cell pos">+110</span></div>
+          </div>
+          <div class="fighter-col">
+            <div class="fighter-name">Victor Valenzuela</div>
+            <div class="fighter-record">Welterweight · UFC Debut</div>
+            <div class="fighter-stat"><span class="stat-label">Background:</span><span class="stat-val">KO artist, aggressive finisher</span></div>
+            <div class="fighter-stat"><span class="stat-label">UFC Experience:</span><span class="stat-val">Debut</span></div>
+            <div class="fighter-stat"><span class="stat-label">Market Odds:</span><span class="stat-val num-cell neg">−130</span></div>
+          </div>
+        </div>
+        <div class="fight-analysis">
+          <div class="analysis-title">Matchup Analysis</div>
+          <div class="analysis-text">
+            This is effectively a coin-flip fight. Griffin is 40 years old with 2 recent losses — clearly at the tail end of his career — but he's a durable, experienced fighter who doesn't get stopped easily. Valenzuela is a KO artist making his UFC debut. Debut nerves are real. Griffin's octagon experience is significant.
+            <br><br>
+            The market has Valenzuela as a modest favorite at −130 (57% implied), but my assessment puts this near 50/50 given Griffin's durability and experience advantage, and the uncertainty around any UFC debutant's ability to immediately impose their finishing power.
+          </div>
+          <div class="key-factor">
+            <strong>Key Factor</strong>
+            Debut pressure vs. veteran grit. Valenzuela's KO power is real but Griffin has been stopped very rarely. If Griffin can survive early and grind, the experience edge matters. If Valenzuela's power translates immediately to UFC, he wins.
+          </div>
+        </div>
+        <div class="fight-verdict">
+          <div class="verdict-pick"><span>My Pick</span><strong>Victor Valenzuela</strong></div>
+          <div class="verdict-method">KO/TKO · Power Advantage · Slight Edge</div>
+          <div class="verdict-conf"><span class="badge badge-conf-lo">51% Confidence — TRUE COIN FLIP</span></div>
+        </div>
+      </div>
+
+    </div><!-- end prelim section-body -->
+  </div>
+
+  <!-- ══ IV. MASTER ODDS TABLE ══ -->
+  <div class="section-card" id="odds-table">
+    <div class="section-head">
+      <div class="section-num">IV</div>
+      <h2>Master Odds &amp; Probability Comparison Table</h2>
+    </div>
+    <div class="section-body">
+      <p class="text-muted mb-16">Market odds as of ~4:00 PM ET, April 25, 2026. My odds derived from independent probability assessment. "Edge" = difference between market implied probability and my implied probability.</p>
+      <table class="odds-table">
+        <thead>
+          <tr>
+            <th>Fight</th>
+            <th>My Pick</th>
+            <th>Market Odds (Pick)</th>
+            <th>My Prob.</th>
+            <th>My Fair Odds</th>
+            <th>Market Prob.</th>
+            <th>Edge</th>
+            <th>Assessment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sterling vs. Zalal</td>
+            <td><strong>Sterling</strong></td>
+            <td class="num-cell pos">+114–120</td>
+            <td class="num-cell">52%</td>
+            <td class="num-cell neg">−108</td>
+            <td class="num-cell">46%</td>
+            <td class="num-cell pos">+6%</td>
+            <td><span class="value-flag hot">VALUE — Sterling</span></td>
+          </tr>
+          <tr>
+            <td>Dumont vs. Edwards</td>
+            <td><strong>Dumont</strong></td>
+            <td class="num-cell neg">−245</td>
+            <td class="num-cell">62%</td>
+            <td class="num-cell neg">−163</td>
+            <td class="num-cell">71%</td>
+            <td class="num-cell neg">−9%</td>
+            <td><span class="value-flag hot">VALUE — Edwards +200</span></td>
+          </tr>
+          <tr>
+            <td>Garcia vs. Hernandez</td>
+            <td><strong>Hernandez</strong></td>
+            <td class="num-cell neg">−125–130</td>
+            <td class="num-cell">54%</td>
+            <td class="num-cell neg">−117</td>
+            <td class="num-cell">56%</td>
+            <td class="num-cell neg">−2%</td>
+            <td><span class="value-flag">Slight Value — Garcia</span></td>
+          </tr>
+          <tr>
+            <td>Grant vs. Martinetti</td>
+            <td><strong>Martinetti</strong></td>
+            <td class="num-cell neg">−130–155</td>
+            <td class="num-cell">55%</td>
+            <td class="num-cell neg">−122</td>
+            <td class="num-cell">60%</td>
+            <td class="num-cell neg">−5%</td>
+            <td><span class="value-flag">Slight Value — Grant</span></td>
+          </tr>
+          <tr>
+            <td>Jones vs. Barcelos</td>
+            <td><strong>Jones</strong></td>
+            <td class="num-cell neg">−185–190</td>
+            <td class="num-cell">62%</td>
+            <td class="num-cell neg">−163</td>
+            <td class="num-cell">65%</td>
+            <td class="num-cell neg">−3%</td>
+            <td><span class="value-flag">Slight Value — Barcelos</span></td>
+          </tr>
+          <tr>
+            <td>Buchecha vs. Spann</td>
+            <td><strong>Buchecha</strong></td>
+            <td class="num-cell neg">−135</td>
+            <td class="num-cell">58%</td>
+            <td class="num-cell neg">−138</td>
+            <td class="num-cell">57%</td>
+            <td class="num-cell">+1%</td>
+            <td>Market Correct</td>
+          </tr>
+          <tr>
+            <td>Vieira vs. McConico</td>
+            <td><strong>Vieira</strong></td>
+            <td class="num-cell neg">−290–300</td>
+            <td class="num-cell">74%</td>
+            <td class="num-cell neg">−285</td>
+            <td class="num-cell">74%</td>
+            <td class="num-cell">0%</td>
+            <td>Market Correct</td>
+          </tr>
+          <tr>
+            <td>Dumas vs. McVey</td>
+            <td><strong>McVey</strong></td>
+            <td class="num-cell neg">−175–200</td>
+            <td class="num-cell">58%</td>
+            <td class="num-cell neg">−138</td>
+            <td class="num-cell">64%</td>
+            <td class="num-cell neg">−6%</td>
+            <td><span class="value-flag">Slight Value — Dumas</span></td>
+          </tr>
+          <tr>
+            <td>Silva vs. Montague</td>
+            <td><strong>Montague</strong></td>
+            <td class="num-cell pos">+340</td>
+            <td class="num-cell">35%</td>
+            <td class="num-cell pos">+186</td>
+            <td class="num-cell">23%</td>
+            <td class="num-cell pos">+12%</td>
+            <td><span class="value-flag best">BEST VALUE — Silva +340</span></td>
+          </tr>
+          <tr>
+            <td>Filho vs. Durden</td>
+            <td><strong>Filho</strong></td>
+            <td class="num-cell neg">−600</td>
+            <td class="num-cell">84%</td>
+            <td class="num-cell neg">−525</td>
+            <td class="num-cell">86%</td>
+            <td class="num-cell neg">−2%</td>
+            <td>Market Correct</td>
+          </tr>
+          <tr>
+            <td>Marshall vs. Brennan</td>
+            <td><strong>Marshall</strong></td>
+            <td class="num-cell neg">−535–600</td>
+            <td class="num-cell">83%</td>
+            <td class="num-cell neg">−488</td>
+            <td class="num-cell">85%</td>
+            <td class="num-cell neg">−2%</td>
+            <td>Market Correct</td>
+          </tr>
+          <tr>
+            <td>Griffin vs. Valenzuela</td>
+            <td><strong>Valenzuela</strong></td>
+            <td class="num-cell pos">+110</td>
+            <td class="num-cell">50%</td>
+            <td class="num-cell">EVEN</td>
+            <td class="num-cell">48%</td>
+            <td class="num-cell pos">+2%</td>
+            <td><span class="value-flag hot">VALUE — Griffin +110</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout callout-note mt-16">
+        <div class="callout-title">How to Read This Table</div>
+        "My Prob." = my independent win probability estimate for the listed pick. "My Fair Odds" = what the odds should be if my probability is correct. When Market Odds are better than My Fair Odds (for the underdog pick), that represents positive expected value. "Edge" = My Prob. minus Market Implied Prob. — positive edge means the market undervalues that fighter.
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ V. VALUE BETS ══ -->
+  <div class="section-card" id="value-bets">
+    <div class="section-head">
+      <div class="section-num">V</div>
+      <h2>Value Bet Identification &amp; Market Asymmetries</h2>
+    </div>
+    <div class="section-body">
+      <p>The following bets show the largest gap between my implied probability and the market's implied probability — representing the clearest potential value. Ranked by edge size.</p>
+
+      <div class="value-grid mt-16">
+
+        <div class="value-tile tier1">
+          <div class="value-tier">Tier 1 — Largest Asymmetry</div>
+          <div class="value-fighter">Mayra Bueno Silva</div>
+          <div class="value-odds-row">
+            <div>
+              <div class="edge-label">Market Odds</div>
+              <div class="market-odds">+340</div>
+            </div>
+            <div>
+              <div class="edge-label">My Fair Odds</div>
+              <div class="fair-odds">+186</div>
+            </div>
+            <div>
+              <div class="edge-label">Edge</div>
+              <div class="market-odds">+12%</div>
+            </div>
+          </div>
+          <div class="value-rationale">
+            Market is pricing Silva at ~23% win probability. My assessment: ~35%. Her 4-fight losing streak was against elite opponents — Erin Blanchfield, Norma Dumont, top BW contenders. She is a former elite grappler, not a declining journeywoman. Montague is 7-0 but only on her 2nd UFC fight. The line overreacts to Silva's losing streak without accounting for the competition quality. At +340, you're getting paid nearly 3.4x on what I believe is a 35% shot — one of the clearest value spots on the card.
+          </div>
+        </div>
+
+        <div class="value-tile tier1">
+          <div class="value-tier">Tier 1 — Strong Value</div>
+          <div class="value-fighter">Aljamain Sterling</div>
+          <div class="value-odds-row">
+            <div>
+              <div class="edge-label">Market Odds</div>
+              <div class="market-odds">+114–120</div>
+            </div>
+            <div>
+              <div class="edge-label">My Fair Odds</div>
+              <div class="fair-odds">−108</div>
+            </div>
+            <div>
+              <div class="edge-label">Edge</div>
+              <div class="market-odds">+6%</div>
+            </div>
+          </div>
+          <div class="value-rationale">
+            Sterling is being priced as an underdog (+114-120) when my assessment gives him a slight edge. His wrestling pedigree is elite — he's a former world champion with championship-level takedown and top control. Zalal's BJJ is outstanding but the wrestling-to-submission defense challenge goes both ways. Sterling's 5-round cardio and experience in high-stakes fights are underpriced. Getting paid to take the main event pick — excellent value spot.
+          </div>
+        </div>
+
+        <div class="value-tile tier2">
+          <div class="value-tier">Tier 2 — Solid Value</div>
+          <div class="value-fighter">Joselyne Edwards</div>
+          <div class="value-odds-row">
+            <div>
+              <div class="edge-label">Market Odds</div>
+              <div class="market-odds">+200</div>
+            </div>
+            <div>
+              <div class="edge-label">My Fair Odds</div>
+              <div class="fair-odds">+163</div>
+            </div>
+            <div>
+              <div class="edge-label">Edge</div>
+              <div class="market-odds">+9% (alt.)</div>
+            </div>
+          </div>
+          <div class="value-rationale">
+            Dumont is the better fighter and deserves to be favorite, but −245 is too much for a 3-round fight against an aggressive finisher on 4 consecutive stoppages. Edwards has real knockout power and has historically performed well as a short-notice replacement. Even if Dumont wins 62% of the time, +200 offers positive expected value (breakeven is +163). The market is slightly overreacting to Dumont's ranking and Edwards' short notice.
+          </div>
+        </div>
+
+        <div class="value-tile tier3">
+          <div class="value-tier">Tier 3 — Moderate Value</div>
+          <div class="value-fighter">Max Griffin</div>
+          <div class="value-odds-row">
+            <div>
+              <div class="edge-label">Market Odds</div>
+              <div class="market-odds">+110</div>
+            </div>
+            <div>
+              <div class="edge-label">My Fair Odds</div>
+              <div class="fair-odds">EVEN (0)</div>
+            </div>
+            <div>
+              <div class="edge-label">Edge</div>
+              <div class="market-odds">+2%</div>
+            </div>
+          </div>
+          <div class="value-rationale">
+            Griffin's age (40) and 2-fight skid have pushed his price up to +110 against a UFC debutant. My model puts this near 50/50. Getting +110 on a coin flip is textbook positive expected value — for every $100 wagered, you profit $10 in expected value. Small edge but clean and real. Debut pressure on Valenzuela is the justification.
+          </div>
+        </div>
+
+      </div>
+
+      <div class="callout callout-warn mt-16">
+        <div class="callout-title">Risk Disclosure</div>
+        All value assessments are based on pre-fight analysis and probability estimates. MMA is inherently unpredictable — upsets are common. The Silva bet in particular is a high-variance play: she may have genuinely declined, and Montague may be better than her record suggests. Bet sizing should be proportional to confidence level, not just expected value.
+      </div>
+
+      <div class="callout callout-risk mt-16">
+        <div class="callout-title">Fights to Avoid (No Edge)</div>
+        Buchecha/Spann, Vieira/McConico, Filho/Durden, Marshall/Brennan — market is correctly priced on all of these. The juice on the heavy favorites (Filho at −600, Marshall at −535) makes them unprofitable even when you're right 85% of the time. No value found on these bouts.
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ VI. TAKEAWAYS ══ -->
+  <div class="section-card" id="takeaways">
+    <div class="section-head">
+      <div class="section-num">VI</div>
+      <h2>Key Takeaways &amp; Summary</h2>
+    </div>
+    <div class="section-body">
+
+      <div class="callout callout-value">
+        <div class="callout-title">Best Value Play of the Night</div>
+        <strong>Mayra Bueno Silva +340</strong> — Former elite contender whose losing streak is against top-5 opponents. Market is pricing her at 23% when 35% is more appropriate. At +340, the expected value gap is the largest on the card.
+      </div>
+
+      <p style="margin: 16px 0; font-weight: 600; font-family: Arial, sans-serif; color: var(--navy);">All Picks Summary:</p>
+      <ul class="bullet-list">
+        <li><strong>Main Event:</strong> Aljamain Sterling (52%) — Wrestling edge underpriced at +114</li>
+        <li><strong>Co-Main:</strong> Norma Dumont (62%) — Deserves to be favorite, but Edwards +200 has value</li>
+        <li><strong>Garcia vs. Hernandez:</strong> Omar Hernandez (54%) — Momentum edge, very close</li>
+        <li><strong>Grant vs. Martinetti:</strong> Manuel Martinetti (55%) — Prospect edge, debut uncertainty</li>
+        <li><strong>Jones vs. Barcelos:</strong> Trevin Jones (62%) — Power favorite, line seems fair</li>
+        <li><strong>Buchecha vs. Spann:</strong> Alexandre Buchecha (58%) — Grappling advantage, 2-week notice hurts Spann</li>
+        <li><strong>Vieira vs. McConico:</strong> Rodolfo Vieira (74%) — Near lock, no value either way</li>
+        <li><strong>Dumas vs. McVey:</strong> Jackson McVey (58%) — Slight edge, Dumas has value at +145</li>
+        <li><strong>Silva vs. Montague:</strong> Michelle Montague (65%) — But Silva +340 is significant value</li>
+        <li><strong>Filho vs. Durden:</strong> Jose Joao Filho (84%) — Near lock, short notice crusher</li>
+        <li><strong>Marshall vs. Brennan:</strong> Francis Marshall (83%) — 5-day notice for UFC debut = no contest</li>
+        <li><strong>Griffin vs. Valenzuela:</strong> Victor Valenzuela (51%) — Coin flip; Griffin +110 is value</li>
+      </ul>
+
+      <hr class="divider">
+
+      <p style="margin-bottom: 10px; font-weight: 600; font-family: Arial, sans-serif; color: var(--navy);">Prioritized Value Bets (Ranked by Edge):</p>
+      <ol style="padding-left: 20px; line-height: 2; font-size: 14px;">
+        <li><strong>Silva +340</strong> — Largest edge (~12%), former elite vs. unproven 2nd-UFC-fight prospect</li>
+        <li><strong>Sterling +114–120</strong> — Main event, wrestling-first fighter underpriced as underdog</li>
+        <li><strong>Edwards +200</strong> — Finisher vs. −245 favorite, short notice overpenalized</li>
+        <li><strong>Griffin +110</strong> — 50/50 fight with +value pricing, debut pressure on Valenzuela</li>
+      </ol>
+
+      <div class="callout callout-note mt-16">
+        <div class="callout-title">Analytical Disclaimer</div>
+        This research paper represents independent pre-fight analysis using publicly available fight data, records, and market odds as of April 25, 2026 at approximately 4:00 PM ET. It is intended as analytical research only — not investment, financial, or wagering advice. MMA outcomes cannot be predicted with certainty. All probability estimates carry material uncertainty.
+      </div>
+    </div>
+  </div>
+
+</div><!-- end page-body -->
+</div><!-- end container -->
+
+<!-- FOOTER -->
+<footer class="page-footer">
+  <div class="footer-disc">
+    <strong style="color: #c8d4e8;">Analytics Research Group — UFC Fight Night Research Paper</strong><br>
+    This document is prepared for analytical and research purposes only. All odds referenced were sourced at approximately 4:00 PM ET on April 25, 2026. Probability estimates represent the author's independent assessment and do not constitute wagering advice. Past analytical accuracy does not guarantee future performance. MMA events carry inherent unpredictability.
+  </div>
+  <div class="footer-right">
+    ARG-UFC-2026-0425<br>
+    Prepared: April 25, 2026<br>
+    sterling-vs-zalal
+  </div>
+</footer>
+
+</body>
+</html>
